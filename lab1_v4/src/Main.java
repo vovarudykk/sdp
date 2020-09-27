@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
@@ -21,17 +21,16 @@ public class Main {
         Dishes cup2 = new Cup("Cup2", Material.CERAMICS, false, sizeOfCup2);
         dishes_list.add(cup2);
 
-
         Dishes.Size sizeOfShaker = new Dishes.Size(1.5, 5);
         SaltShaker saltshaker1 = new SaltShaker("SaltShaker1", Material.GLASS, "China", sizeOfShaker);
         dishes_list.add(saltshaker1);
 
+        Service service1 = new Service();
 
-        Service service1 = new Service(dishes_list);
-
-
-        for(int i = 0; i < dishes_list.size(); i++) {
-            System.out.println(dishes_list.get(i));
+        Iterator<Dishes> iterator = dishes_list.iterator();
+        while(iterator.hasNext()){
+            service1.addDishes(iterator.next());
         }
+        System.out.println(service1);
     }
 }
