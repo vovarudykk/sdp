@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 
 public class Main {
@@ -23,7 +22,7 @@ public class Main {
         dishes_list.add(cup2);
 
         Dishes.Size sizeOfShaker = new Dishes.Size(1.5, 5);
-        SaltShaker saltshaker1 = new SaltShaker("SaltShaker1", Material.GLASS, "China", sizeOfShaker);
+        SaltShaker saltshaker1 = new SaltShaker("SaltShaker1", Material.STEEL, "China", sizeOfShaker);
         dishes_list.add(saltshaker1);
 
         Service service1 = new Service();
