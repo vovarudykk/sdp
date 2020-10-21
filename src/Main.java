@@ -13,12 +13,13 @@ public class Main {
         Dishes soup_plate1 = new SoupPlate("SoupPlate1", Material.CERAMICS, "Ukraine", sizeOfSoupPlate, 2);
         dishes_list.add(soup_plate1);
 
+        Handle handle1 = new Handle(Material.STEEL);
         Dishes.Size sizeOfCup1 = new Dishes.Size(5, 12);
-        Dishes cup1 = new Cup("Cup1", Material.GLASS, "China", false, sizeOfCup1);
+        Dishes cup1 = new Cup("Cup1", Material.GLASS, "China", handle1, sizeOfCup1);
         dishes_list.add(cup1);
 
         Dishes.Size sizeOfCup2 = new Dishes.Size(7, 8);
-        Dishes cup2 = new Cup("Cup2", Material.CERAMICS, false, sizeOfCup2);
+        Dishes cup2 = new Cup("Cup2", Material.CERAMICS, "Ukraine", sizeOfCup2);
         dishes_list.add(cup2);
 
         Dishes.Size sizeOfShaker = new Dishes.Size(1.5, 5);
