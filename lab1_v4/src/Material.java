@@ -13,8 +13,12 @@ public enum Material {
     public static StringBuilder getStringAll() {
         Material[] mat = Material.values();
         StringBuilder str = new StringBuilder("We have " + (mat.length) + " kinds of materials:\n");
+        String str_mat = "";
         for (Material materials : mat) {
-            str.append(materials.name()).append(" ");
+            str_mat += materials.name() + " ";
+        }
+        for (String str_split : str_mat.split(" ")) {
+            str.append(str_split).append("; ");
         }
         return str;
     }
