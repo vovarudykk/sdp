@@ -1,9 +1,13 @@
 public enum Material {
     PORCELAIN("France"),
     GLASS("Ukraine"),
-    CERAMICS("Italy");
+    CERAMICS("Italy"),
+    STEEL;
 
     private String countryOfProduction;
+
+    Material() {
+    }
 
     Material(String country) {
         this.countryOfProduction = country;
