@@ -19,7 +19,6 @@ public class main {
         Service service1 = new Service(ListService1, ListService2);
         System.out.println(service1.toString());
 
-        System.out.println(Material.STEEL.getCountryOfProduction());
         System.out.println(Material.getStringAll());
 
 
