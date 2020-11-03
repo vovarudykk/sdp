@@ -35,5 +35,10 @@ public class Main {
         System.out.println(service1);
 
         System.out.println(Material.getStringAll());
+
+//        handle1.printData();
+
+//        Dishes cup4 = new Cup("Cup2", Material.GLASS, "China", handle1, sizeOfCup1);
+//        System.out.println(cup1.equals(cup4));
     }
 }
