@@ -5,8 +5,12 @@ public class SaltShaker extends Dishes{
         super(name, material, producer, sizeOfShaker);
     }
 
+
     private static class Salt {
         public void addSalt(double salt) {
+            SaltShaker.salt += salt;
+        }
+        public void addSalt(int salt) {
             SaltShaker.salt += salt;
         }
     }
