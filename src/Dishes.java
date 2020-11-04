@@ -11,6 +11,20 @@ abstract class Dishes {
         this.size = size;
     }
 
+    public Dishes(int name, Material material, String producer, Size size) {
+        try{
+            throw new DishesException("Incorrect type of name", this);
+        } catch (DishesException de) {
+            de.printStackTrace();
+        } finally {
+            System.err.println("Error");
+            this.name = Integer.toString(name);
+        }
+        this.material = material;
+        this.producer = producer;
+        this.size = size;
+    }
+
     public String getName() {return name;}
 
     public void setName(String name) {this.name = name;}
