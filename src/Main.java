@@ -36,9 +36,20 @@ public class Main {
 
         System.out.println(Material.getStringAll());
 
+//        System.out.println(saltshaker1.getSaltCount());
+//        saltshaker1.addSaltInSH(5);
+//        System.out.println(saltshaker1.getSaltCount());
+
 //        handle1.printData();
 
-//        Dishes cup4 = new Cup("Cup2", Material.GLASS, "China", handle1, sizeOfCup1);
-//        System.out.println(cup1.equals(cup4));
+//    Dishes cup4 = new Cup("Cup1", Material.GLASS, "China", handle1, sizeOfCup1);
+//    System.out.println(cup1.equals(cup4));
+
+//        Dishes.Size size1 = new Dishes.Size(0.7, 100);
+//        Dishes.Size size2 = new Dishes.Size(200, 99);
+//        Dishes.Size size3 = new Dishes.Size(0.5, 110);
+//        System.out.println(size1);
+//        System.out.println(size2);
+//        System.out.println(size3);
     }
 }
