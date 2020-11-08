@@ -13,7 +13,6 @@ public class Handle implements Printable{
         this.material = material;
     }
 
-
     @Override
     public void printData() {
         System.out.println("Handle material is " + material);
