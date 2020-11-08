@@ -23,7 +23,7 @@ public class DishesTest {
     }
 
     @Test
-    public void testIntegratedFunc() {
+    public void testConvertSize() {
         SizeConvertor obj = Mockito.mock(SizeConvertor.class);
         Mockito.when(obj.smToMm(sizeOfPlate.getRadius(), sizeOfPlate.getDeep())).thenReturn("radius = 5.0мм; deep = 1.1м");
         Assertions.assertEquals(sizeOfPlate.convertSize(), "radius = 5.0мм; deep = 1.1м");
