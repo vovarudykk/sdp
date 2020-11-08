@@ -12,7 +12,7 @@ public class CupTest {
     }
 
     @Test
-    public void testConstructor() throws Exception {
+    public void testConstructorCup() throws Exception {
         Cup cup2 = new Cup("Cup2", Material.CERAMICS, "Ukraine", sizeOfCup1);
         Assertions.assertFalse(cup2.isHasHandle());
 
@@ -21,13 +21,13 @@ public class CupTest {
     }
 
     @Test
-    public void testObjectEquation() throws Exception {
+    public void testObjectEquals() throws Exception {
         Cup cup1_clone = new Cup("Cup1", Material.GLASS, "China", handle1, sizeOfCup1);
         Assertions.assertEquals(this.cup1, cup1_clone);
     }
 
     @Test
-    public void testObjectEquationFalse() throws Exception {
+    public void testObjectEqualsFalse() throws Exception {
         Cup cup1_clone = new Cup("Cup1", Material.PORCELAIN, "China", handle1, sizeOfCup1);
         Assertions.assertNotEquals(this.cup1, cup1_clone);
     }
