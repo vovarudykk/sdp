@@ -14,7 +14,7 @@ public enum Material {
     }
 
 
-    public static StringBuilder getStringAll() {
+    public static String getStringAll() {
         Material[] mat = Material.values();
         StringBuilder str = new StringBuilder("We have " + (mat.length) + " kinds of materials:\n");
         String str_mat = "";
@@ -24,7 +24,7 @@ public enum Material {
         for (String str_split : str_mat.split(" ")) {
             str.append(str_split.toLowerCase()).append("; ");
         }
-        return str;
+        return str.toString();
     }
 
 
