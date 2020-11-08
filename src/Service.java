@@ -3,8 +3,7 @@ import java.util.ArrayList;
 public class Service {
     private ArrayList<Dishes> dishes = new ArrayList<>();
 
-    public Service() {
-    }
+    public Service() {}
 
     public ArrayList<Dishes> getDishes() {
         return dishes;
