@@ -58,6 +58,11 @@ abstract class Dishes {
             this.deep = deep;
         }
 
+        public String convertSize() {
+            SizeConvertor obj = new SizeConvertor();
+            return obj.smToMm(getRadius(), getDeep());
+        }
+
         public double getRadius() {return radius;}
 
         public void setRadius(double radius) {this.radius = radius;}
@@ -68,10 +73,7 @@ abstract class Dishes {
 
         @Override
         public String toString() {
-            return "Size(" +
-                    "radius=" + radius +
-                    ", deep=" + deep +
-                    ')';
+            return "Size(" + convertSize() + ')';
         }
     }
 }
